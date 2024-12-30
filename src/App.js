@@ -8,3 +8,18 @@ const facts = [
     "Domestic cats can run up to 30 mph.",
     "A cat's whiskers are roughly as wide as its body."
 ];
+
+const App = () => {
+    return (
+        <div className="app">
+            <h1>Fun Facts About Cats</h1>
+            <ul>
+                {facts.map((fact, index) => (
+                    <li key={index}>{fact}</li>
+                ))}
+            </ul>
+        </div>
+    );
+};
+
+export default App;
